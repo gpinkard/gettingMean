@@ -1,5 +1,5 @@
 ## README
-live application link: https://cryptic-scrubland-30222.herokuapp.com/
+live application link: <a href=" https://cryptic-scrubland-30222.herokuapp.com/">WRITTEN TEXT</a>
 
 Chapter Four
 
@@ -12,6 +12,8 @@ the program. Here is a screenshot of the info page:
 
 
 Chapter Three
+
+live application link: <a href=" https://cryptic-scrubland-30222.herokuapp.com/">WRITTEN TEXT</a>
 
 Finished the chapter 3 tutorial. Heroku application is now up and running. The whole process did not go as smooth as I initially thought it was going to be. After getting bootstrap and jQuery installed I tried to launch the app using nodemon. This did not work. After discovering a few errors, remedying them, and finding that my app still did not work, I restarted the project. Same problem. It looked like this:
 
