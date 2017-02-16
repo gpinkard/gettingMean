@@ -35,25 +35,24 @@ module.exports.locationInfo = function(req, res) {
         },
         location: {
             name: 'Oppenheimer Cafe',
-            address: '125 High Street, Reading, RG6 1PS',
+            address: '1500 N. Warner St. Tacoma, WA 98416',
             rating: 3,
             facilities: ['Hot drinks', 'Food', 'Premium wifi'],
             coords: {
-                lat: 47.2635,
-                lng: -122.4832
+                lat: 47.2635, lng: -122.4832
             },
             openingTimes: [{
-                days: 'Monday - Thursday',
+                days: 'Monday - Friday',
                 opening: '7:00am',
-                closing: '6:00pm',
+                closing: '7:00pm',
                 closed: false
             }, {
-            	days: 'Friday',
-            	opening: '7:00am',
+            	days: 'Saturday',
+            	opening: '8:00am',
             	closing: '5:00pm',
             	closed: false
             }, {
-                days: 'Saturday & Sunday',
+                days: 'Sunday',
                 closed: true
             }],
             reviews: [{
