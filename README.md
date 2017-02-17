@@ -1,4 +1,16 @@
 ## README
+Chapter Five
+
+live application link: <a href="https://cryptic-scrubland-30222.herokuapp.com/">Heroku</a>
+
+Finished chapter five. In this chapter we worked with Mongo to start building the database. This process was harder than it had to be, I made a mistake
+early on, by accident I created two mLab databases using the Heroku plugin. Once I sorted that out it was smooth sailing for the most part. Since this
+chapter did not focus on the website, I am not certain whether I did everything correctly, as I had no way of viewing my progress. However I was able to
+push the documents from my local database to mLab, so I am fairly certain everything is working as it should. Robomongo proved to be a very useful tool.
+Here is a picture of my control panel on mLab:
+
+![picture](readme_imgs/chap5.png)
+
 live application link: <a href="https://cryptic-scrubland-30222.herokuapp.com/">Heroku</a>
 
 Chapter Four
