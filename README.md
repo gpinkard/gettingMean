@@ -1,4 +1,16 @@
 ## README
+
+Chapter Six
+
+live application link: <a href="https://cryptic-scrubland-30222.herokuapp.com/">Heroku</a>
+
+Finished Chapter Six. In this chapter we built the api for getting, posting, putting, and deleting. I had a little difficulty with this chapter,
+but per usual it was my negligence. The first issue I had was that I did not realize that I had to include temp functions for all the ctrl functions,
+a stark reminder not to code at 1:00am. This led to a few frusterating errors, but I was able to iron them out eventually. After that it was just
+copying code from the book. Enjoy this lovely picture:
+
+![picture](readme_imgs/chap6.png)
+
 Chapter Five
 
 live application link: <a href="https://cryptic-scrubland-30222.herokuapp.com/">Heroku</a>
@@ -8,7 +20,7 @@ early on, by accident I created two mLab databases using the Heroku plugin. Once
 chapter did not focus on the website, I am not certain whether I did everything correctly, as I had no way of viewing my progress. However I was able to
 push the documents from my local database to mLab, so I am fairly certain everything is working as it should. Robomongo proved to be a very useful tool.
 Here is a picture of my control panel on mLab:
- 
+
 ![picture](readme_imgs/chap5.png)
 
 live application link: <a href="https://cryptic-scrubland-30222.herokuapp.com/">Heroku</a>
