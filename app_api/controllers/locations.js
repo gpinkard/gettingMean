@@ -31,7 +31,7 @@ module.exports.locationsListByDistance = function (req, res) {
     } else {
       results.forEach(function(doc) {
         locations.push({
-          distance: doc.dis,
+          distance: doc.dis/1000, // div by 1000 to put in km
           name: doc.obj.name,
           address: doc.obj.address,
           rating: doc.obj.rating,
