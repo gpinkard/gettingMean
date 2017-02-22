@@ -1,5 +1,23 @@
 ## README
 
+Chapter Seven
+
+live application link: <a href="https://cryptic-scrubland-30222.herokuapp.com/">Heroku</a>
+
+Finished chapter seven. In this chapter we implemented various API's, finished the review screen, and the distances for the various locatons.
+This chapter was quite challenging. I still have a few errors that I have not been able to fix. The app works on localhost perfectly fine,
+here is a picture of the error catching features of the review screen:
+
+![picture](readme_imgs/chap7.png)
+
+However my live heroku app is broken. Launching it results in an API lookup error. This error occurs when renderHomepage is not passed an Array
+of locations to read off of. I decided to mess with the URL a bit, using https://cryptic-scrubland-30222.herokuapp.com/api/locations/58a56294b21b23b64f67d354
+I was able to fetch the raw document in question:
+
+![picture](readme_imgs/chap7HerokuError.png)
+
+I do not know what is causing renderHomepage to be sent bad data, and I hope to be able to remedy this error as soon as possible.
+
 Chapter Six
 
 live application link: <a href="https://cryptic-scrubland-30222.herokuapp.com/">Heroku</a>
