@@ -8,6 +8,18 @@ if (process.env.NODE_ENV === 'production') {
   apiOptions.server = "https://cryptic-scrubland-30222.herokuapp.com/";
 }
 
+var _formatDistance = function (distance) {
+  var numDistance, unit;
+  if (distance > 1) {
+    numDistance = parseFloat(distance).toFixed(1);
+    unit = 'km';
+  } else {
+    numDistance = parseInt(distance * 1000,10);
+    unit = 'm';
+  }
+  return numDistance + unit;
+};
+
 var renderHomepage = function(req, res, responseBody) {
   var message;
   if (!(responseBody instanceof Array)) {
@@ -56,18 +68,6 @@ module.exports.homelist = function(req, res) {
         renderHomepage(req, res, data);
     }
   );
-};
-
-var _formatDistance = function (distance) {
-  var numDistance, unit;
-  if (distance > 1) {
-    numDistance = parseFloat(distance).toFixed(1);
-    unit = 'km';
-  } else {
-    numDistance = parseInt(distance * 1000,10);
-    unit = 'm';
-  }
-  return numDistance + unit;
 };
 
 var renderDetailPage = function (req, res, locDetail) {
