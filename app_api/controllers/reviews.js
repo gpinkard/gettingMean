@@ -20,6 +20,7 @@ var doAddReview = function(req, res, location) {
     location.save(function(err, location) {
       var thisReview;
       if (err) {
+        console.log(err);
         sendJsonResponse(res, 400, err);
       } else {
         updateAverageRating(location._id);
@@ -29,6 +30,7 @@ var doAddReview = function(req, res, location) {
     });
   }
 };
+
 var updateAverageRating = function(locationid) {
   Loc
     .findById(locationid)
