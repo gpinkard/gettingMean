@@ -5,7 +5,7 @@ var apiOptions = {
   server : "http://localhost:3000"
 };
 if (process.env.NODE_ENV === 'production') {
-  apiOptions.server = "https://cryptic-scrubland-30222.herokuapp.com/";
+  apiOptions.server = "https://cryptic-scrubland-30222.herokuapp.com";
 }
 
 var _formatDistance = function (distance) {
