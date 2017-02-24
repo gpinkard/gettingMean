@@ -7,15 +7,9 @@ live application link: <a href="https://cryptic-scrubland-30222.herokuapp.com/">
 Finished chapter seven. In this chapter we implemented various API's, finished the review screen, and the distances for the various locatons.
 This chapter was quite challenging. For a while I was having an error where my localhost application was working fine, but when I went to my
 live heroku app, the page would display "API lookup error". I resolved this by removing a / from the end of apiOptions.server in locations.js
-Here is a picture of the application working. 
+Here is a picture of the application working:
 
 ![picture](readme_imgs/chap7.png)
-
-However my live heroku app is broken. Launching it results in an API lookup error. This error occurs when renderHomepage is not passed an Array
-of locations to read off of. I decided to mess with the URL a bit, using https://cryptic-scrubland-30222.herokuapp.com/api/locations/58a56294b21b23b64f67d354
-I was able to fetch the raw document in question:
-
-![picture](readme_imgs/chap7HerokuError.png)
 
 I do not know what is causing renderHomepage to be sent bad data, and I hope to be able to remedy this error as soon as possible.
 
