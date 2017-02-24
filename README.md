@@ -11,8 +11,6 @@ Here is a picture of the application working:
 
 ![picture](readme_imgs/chap7.png)
 
-I do not know what is causing renderHomepage to be sent bad data, and I hope to be able to remedy this error as soon as possible.
-
 Chapter Six
 
 live application link: <a href="https://cryptic-scrubland-30222.herokuapp.com/">Heroku</a>
