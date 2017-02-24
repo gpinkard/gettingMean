@@ -5,8 +5,9 @@ Chapter Seven
 live application link: <a href="https://cryptic-scrubland-30222.herokuapp.com/">Heroku</a>
 
 Finished chapter seven. In this chapter we implemented various API's, finished the review screen, and the distances for the various locatons.
-This chapter was quite challenging. I still have a few errors that I have not been able to fix. The app works on localhost perfectly fine,
-here is a picture of the error catching features of the review screen:
+This chapter was quite challenging. For a while I was having an error where my localhost application was working fine, but when I went to my
+live heroku app, the page would display "API lookup error". I resolved this by removing a / from the end of apiOptions.server in locations.js
+Here is a picture of the application working. 
 
 ![picture](readme_imgs/chap7.png)
 
