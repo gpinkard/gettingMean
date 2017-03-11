@@ -1,5 +1,15 @@
 ## README
 
+Chapter Eight
+
+live application link: <a href="https://cryptic-scrubland-30222.herokuapp.com/">Heroku</a>
+
+Finished chapter eight, initially I had issues with this chapter. I accidentaly mistyped the name for a file, and everything was broken until
+Professor Mullen pointed it out. After I got that fixed it was mostly smooth sailing. In this chapter we implemented a search bar, and did a
+lot of back end stuff with angular. Here is a screenshot of the application:
+
+![picture](readme_imgs/chap8.png)
+
 Chapter Seven
 
 live application link: <a href="https://cryptic-scrubland-30222.herokuapp.com/">Heroku</a>
