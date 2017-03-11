@@ -16,32 +16,55 @@ var formatDistance = function () {
 		unit = 'm';
 	   }
 	   return numDistance + unit;
-	   } else {
+	 } else {
 	   return "?";
-        }
-     };
+      }
+  };
 };
 
-var locationListCtrl = function ($scope) {
-  $scope.data = {
-    locations: [{
-      name: 'Burger Queen',
-      address: '125 High Street, Reading, RG6 1PS',
-      rating: 3,
-      facilities: ['Hot drinks', 'Food', 'Premium Wifi', 'Free Wasps'],
-      distance: '0.296456',
-      _id: '5370a35f2536f6785f8dfb6a'
-     },{
-       name: 'Costy',
-       address: '125 High Street, Reading, RG6 1PS',
-       rating: 5,
-       facilities: ['Hot Drinks', 'Premium Wifi', 'Disgruntled Employees'],
-       distance: '0.7865456',
-       _id: '5370a35f2536f678f8dfb6a'
-   }]};
+var ratingStars = function () {
+  return {
+    scope: {
+      thisRating : '=rating'
+    },
+    templateUrl: '/angular/rating-stars.html'
+ };
+};
+
+var loc8rData = function ($http) {
+  return $http.get('/api/locations?lng=-122.48&lat=47.26&maxDistance=20')
+};
+
+var locationListCtrl = function ($scope, loc8rData, geolocation) {
+  $scope.message = "Searching for nearby places";
+  loc8rData
+    .success(function(data) {
+      $scipe.message = data.length > 0 ? "" : "No locations found";
+      $scope.data = { locations: data };
+    })
+    .error(function (e) {
+      $scope.message = "Sorry, something's gone wrong ";
+    });
+};
+
+var geolocation = function () {
+  var getPosition = function (cbSuccess, cbError, cbNoGeo) {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(cbSuccess, cdError);
+    }
+    else {
+      cbNoGeo();
+    }
+  };
+  return {
+    getPosition : getPosition
+  };
 };
 
 angular
   .module('loc8rApp')
   .controller('locationListCtrl', locationListCtrl)
-  .filter('formatDistance', formatDistance);
+  .filter('formatDistance', formatDistance)
+  .directive('ratingStars', ratingStars)
+  .service('loc8rData', loc8rData)
+  .service('geolocation', geolocation);
