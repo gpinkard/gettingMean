@@ -16,7 +16,7 @@ function homeCtrl ($scope, loc8rData, geolocation) {
     var lat = position.coords.latitude, lng = position.coords.longitude;
     vm.message = "Searching for nearby places";
     loc8rData.locationByCoords(lat, lng)
-      .success(function(data)) {
+      .success(function(data) {
         vm.message = data.length > 0 ? "" : "No locations found nearby";
         vm.data = { locations: data };
       })
