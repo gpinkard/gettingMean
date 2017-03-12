@@ -31,57 +31,6 @@ var renderHomepage = function(req, res) {
  });
 };
 
-// in case I need this later
-//var renderHomepage = function(req, res, responseBody) {
-//  var message;
-//  if (!(responseBody instanceof Array)) {
-//    message = "API lookup error";
-//    responseBody = [];
-//  } else {
-//    if (!responseBody.length) {
-//      message = "No places found nearby";
-//    }
-//  }
-//  res.render('locations-list', {
-//    title: 'Loc8r - find a place to work with wifi',
-//       pageHeader: {
-//         title: 'Loc8r',
-//         strapline: 'Find places to work with wifi near you!'
-//       },
-//       sidebar: "Looking for wifi and a seat? Loc8r helps you find places to work when out and about. Perhaps with coffee, cake, or a pint? Let Loc8r help you find the place you're looking for.",
-//       locations: responseBody,
-//       message: message
-//  });
-//};
-
-// just in case in need this later of something breaks :o
-//module.exports.homelist = function(req, res) {
-//  var requestOptions, path;
-//  path = '/api/locations';
-//  requestOptions = {
-//    url : apiOptions.server + path,
-//    method : "GET",
-//    json: {},
-//    qs : {
-//      lng : -122.4835,
-//      lat : 47.2639,
-//      maxDistance : 20
-//    }
-//  };
-//  request(
-//    requestOptions,
-//    function(err, response, body) {
-//        var i, data;
-//        data = body;
-//        if (response.statusCode === 200 && data.length) {
-//          for(i = 0; i<data.length; i++) {
-//            data[i].distance = _formatDistance(data[i].distance);
-//          }
-//        }
-//        renderHomepage(req, res, data);
-//    }
-//  );
-//};
 
 module.exports.homelist = function(req, res) {
   renderHomepage(req, res);
