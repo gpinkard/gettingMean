@@ -9,7 +9,7 @@ function homeCtrl ($scope, loc8rData, geolocation) {
     strapline: 'Find places to work with wifi near you!'
   };
   vm.sidebar = {
-    content: "Looking for wifi and a seat etc etc"
+    content: "Looking for wifi and a seat? Let Loc8r help you out!"
   };
   vm.message = "Checking your location";
   vm.getData = function (position) {
