@@ -1,5 +1,17 @@
 ## README
 
+Chapter Nine
+
+live application link: <a href="https://cryptic-scrubland-30222.herokuapp.com/">Heroku</a>
+
+In this chapter we replaced Express with Angular routing to deliver pages, attached views and controllers to routes and seperated files, instead
+of having one big file that controlled various different functions (geolocation, distance, rating stars etc), we broke them up and put them into
+their own individual folders. We also minified the application using uglify-js to make it more compact. Initially I had issues with this chapter.
+This arose from the fact that I used var blah = function () {  instead of function blah () {. When Professor Mullen pointed this out I was able to
+get the application working. Here is a screenshot of it in its current state:
+
+![picture](readme_imgs/chap9.png)
+
 Chapter Eight
 
 live application link: <a href="https://cryptic-scrubland-30222.herokuapp.com/">Heroku</a>
