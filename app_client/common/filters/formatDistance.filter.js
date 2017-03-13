@@ -1,3 +1,5 @@
+(function () {
+
 angular
   .module('loc8rApp')
   .filter('formatDistance', formatDistance);
@@ -23,3 +25,5 @@ function formatDistance () {
     }
   };
 }
+
+}) ();
