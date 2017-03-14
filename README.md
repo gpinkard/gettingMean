@@ -7,7 +7,7 @@ live application link: <a href="https://cryptic-scrubland-30222.herokuapp.com/">
 In this chapter we took took all of the application code and made it run from the client. Additionally we used the AngularUI component
 modal for the review form, handles post requests to the API using the http service, implemented HTML5 history API, and adding multiple
 views to the application. While this chapter was rather long, I did not run into any issues, most of it was just copying code and heading
-Professor Mullens README notes. Here is a picture of the modal view with a warning for an incorrectly formatted review:
+Professor Mullen's README notes. Here is a picture of the modal view with a warning for an incorrectly formatted review:
 
 ![picture](readme_imgs/chap10.png)
 
